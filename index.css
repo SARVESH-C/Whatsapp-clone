@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #fcf5eb;
+    padding: 0 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.WhatsAppLogo{
+    width: 60px;
+    height: 16px;
+}
+.nav-items{
+    display: flex;
+    gap: 1px;
+    
+      
+}
+.navbar > button{
+    display: flex;
+}
+.Features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.Features > img{
+    rotate: -90deg;
+    /* padding: 2px; */
+    width: 10px;
+    height: 15px;
+}
