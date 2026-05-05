@@ -6,15 +6,16 @@
 }
 .container{
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #fcf5eb;
     padding: 0 40px;
 }
 .navbar{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 19px;
 }
 .WhatsAppLogo{
     width: 60px;
@@ -24,10 +25,29 @@
     display: flex;
     gap: 10px;
 }
-.nav-items > p{
+.Slide{
+    position: relative;
+}
+.Slide::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position:absolute;
+    background: #25d366;
+    bottom: 0;
+    left: 1%;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin:left ;
+}
+.Slide:hover::after{
+    transform: scaleX(1);
+    
+}
+.Slide {
     cursor: pointer;
 }
-.navbar > button{
+.navbar > button , .btn {
     display: flex;
     padding: 10px 20px;
     justify-content: center;
@@ -72,3 +92,74 @@
     width: 10px;
     height: 15px;
 }
+
+.firstSection{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    
+}
+
+
+.MaaBeti{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    background-image: url(WhatsApp/MaaBeti.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+    width: 100%;
+
+}
+
+.firstSection > p{
+    padding: 20px;
+    text-align:end;
+    font-size: 15px;
+    opacity:0.8 ;
+}
+
+.rigth{
+    position: relative;
+    width: 30%;
+}
+.right img:nth-child(1){
+    width: 450px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
