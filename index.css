@@ -104,11 +104,13 @@
 
 .MaaBeti{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 180px;
     border-radius: 30px;
     background-image: url(WhatsApp/MaaBeti.png);
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
     height: 90%;
     width: 100%;
 
@@ -121,15 +123,84 @@
     opacity:0.8 ;
 }
 
-.rigth{
+.right{
     position: relative;
-    width: 30%;
+    width: 600px;
+    height: 100%;
+    
 }
 .right img:nth-child(1){
     width: 450px;
+       animation: gm 0.5s ease-in-out;
+}
+@keyframe gm{
+    0%{
+        transform: translateY(-50px);
 
+    }
+    100%{
+        transform: translateY(50px);
+    }
 }
 
+
+.right img:nth-child(2){
+    position: absolute;
+    right: 75px;
+    top:15px;
+    width: 450px;
+    animation: dil 0.5s ease-in-out;
+}
+@keyframe dil{
+    0%{
+        transform: translateY(-50px);
+
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+.right img:nth-child(3){
+    width: 420px;
+    margin-left: 20px;
+}
+.right img:nth-child(4){
+    width: 450px;
+} 
+.right img:nth-child(5){
+    width: 450px;
+}
+
+.right img:nth-child(6){
+    position: absolute;
+    top: 500px;
+    right:100px ;
+    width: 450px;
+}
+.right img:nth-child(7){
+    width: 450px;
+    padding-top : 30px;
+}
+.btn{
+    width:200px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:30px ;
+    
+}
+.LeftMsg{
+  color: #ffffff  ;
+}
+.LeftMsg > h1{
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    line-height: 80px;
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: -3px;
+}
 
 
 
