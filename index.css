@@ -224,6 +224,15 @@
     font-weight: 500;
 }
 
+.firstBday{
+    margin-top: 80px ;
+    display: flex;
+    justify-content: cente ;
+    align-items: center;
+    gap: 200px;
+
+}
+
 
 
 
