@@ -230,7 +230,13 @@
     justify-content: cente ;
     align-items: center;
     gap: 200px;
+}
 
+.leftPart p:nth-child(1){
+
+    line-height: 22px;   
+    padding-top: 20px;
+     
 }
 
 
